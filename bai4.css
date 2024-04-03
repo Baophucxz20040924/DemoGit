@@ -1,0 +1,140 @@
+body
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+body *{
+    margin: 0;
+    padding: 0;
+}
+
+#top{
+    background-color: rgba(107, 224, 170, 0.911) ;
+    height: 300px;
+    color: black;
+    width: 100%;
+    display: flex;
+    border-bottom-left-radius: 50%;
+     align-items: center; 
+  
+}
+.icon{
+    display: flex;
+    flex-direction: column; 
+}
+i{
+    font-size: 50px;
+}
+
+#top #avt{
+    width: 150px;
+    height: 150px;
+    margin-left: 150px; 
+    border-radius: 50%;    
+  }
+ 
+ 
+#name{
+    margin-left: 30px;
+    font-size: 28px;
+    width: 1000px;
+
+}    
+#sub{
+    font-size: 20px;
+}
+ #infor{
+    background-color: rgb(43, 110, 169);
+    height: 80px;
+    clear: left;
+    text-align: center;
+    line-height:80px ;
+    color: rgb(255, 162, 40);
+    font-size: large;
+    margin-block: 20px;
+    border-radius: 50%;
+}
+ 
+#edu{ 
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#edu #left{
+    background-color: rgb(255, 255, 255);  
+    width: 60%;  
+}
+#edu #left h1{
+    background-color: rgb(255, 176, 28);
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+    color: white; 
+    width: 100%; 
+   
+}
+
+.main-box{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between; 
+}
+
+.box{
+    background-color: aqua;
+    flex-basis: 30%;  
+    margin-top: 10px; 
+}
+
+.anh{ 
+    width: 100%;  
+    border: rgb(136, 136, 136) 1px solid;   
+    box-sizing: border-box;
+    display: flex;
+}
+
+.anh img {
+    width: 100%;  
+}
+
+.box p{ 
+    font-size: large;
+}
+
+
+#edu #right {
+    background-color:white; 
+    width: 35%;
+    
+}
+#edu #right h1{
+    background-color: rgb(255, 181, 44);
+    height: 50px;
+    line-height: 50px;
+    color: white; 
+    text-indent: 20px;
+} 
+.item{
+    display: flex;
+    margin-top: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    border: rgb(255, 208, 80) 2px solid;
+}  
+.item_circel{
+    background-color: aqua;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  
+} 
+#footer{
+    background-color: rgb(152, 175, 196);
+    text-align: center;
+    color: rgb(201, 14, 45);
+    font-size: large;
+    padding: 20px  ;
+    margin-top: 20px;
+}
