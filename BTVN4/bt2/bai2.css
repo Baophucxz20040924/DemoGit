@@ -1,0 +1,66 @@
+  body {
+    margin: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'nav nav'
+      'sidebar content'
+      'footer footer';
+    gap: 10px; 
+    margin: 10px;
+    background-color: #e0f7fa;
+  }
+  .header {
+    grid-area: header;
+    background-color: #00bcd4;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .nav {
+    grid-area: nav;
+    background-color: #2bd5eb;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #b2ebf2;
+    color: #007c91;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .content {
+    grid-area: content;
+    background-color: #b2ebf2;
+    color: #007c91;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .container {
+      grid-template-areas:
+        'header'
+        'nav'
+        'sidebar'
+        'content'
+        'footer'
+        ;
+    }
+    .sidebar, .content {
+      border-radius: 10px;
+    }
+  }
