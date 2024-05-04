@@ -1,0 +1,54 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(33, 33, 66);
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "left mid mid right1"
+        "left content1 content2 right"
+        "left content2 content1 right";
+    grid-template-columns: 200px auto auto 100px; /* Adjust the column widths as needed */
+    height: 100vh;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.left {
+    grid-area: left;
+    background-color: #8a2be2;
+}
+
+.mid {
+    grid-area: mid;
+    background-color: rgb(53, 164, 53);
+}
+
+.content1 {
+    grid-area: content1;
+    background-color: rgb(179, 190, 20);
+}
+
+.content2 {
+    grid-area: content2;
+    background-color: rgb(205, 20, 20);
+}
+
+.right1 {
+    grid-area: right1;
+    background-color: rgb(205, 20, 20);
+}
+
+.right {
+    grid-area: right;
+    background-color: rgb(53, 164, 53);
+}
